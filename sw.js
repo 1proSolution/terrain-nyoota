@@ -1,7 +1,7 @@
-/* Nyoota Terrain · service worker · V131 · 3719ab2ef7f9
+/* Nyoota Terrain · service worker · V131 · 946c5f4bbe58
    Hors réseau, l'application s'ouvre depuis ce cache. Il ne contient QUE le code (aucune donnée : les données vivent
    dans la mémoire du téléphone, et la révocation efface tout, ce cache compris). Les appels à la base ne passent jamais par ici. */
-const CACHE = 'nyoota-terrain-V131-3719ab2ef7f9';
+const CACHE = 'nyoota-terrain-V131-946c5f4bbe58';
 const FICHIERS = ["./","index.html","manifest.webmanifest","icone-192.png","icone-512.png","icone-masque-512.png","icone-180.png"];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FICHIERS)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(k => Promise.all(k.filter(x => x !== CACHE).map(x => caches.delete(x)))).then(() => self.clients.claim())); });
