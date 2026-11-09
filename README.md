@@ -1,6 +1,6 @@
 # Nyoota Terrain
 
-L'édition terrain de Nyoota Négo, publiée sur https://terrain.nyoota.fr (V131 · 08/11/2026).
+L'édition terrain de Nyoota Négo, publiée sur https://terrain.nyoota.fr (V132 · 09/11/2026).
 
 - Ce dépôt est public et ne contient **que du code** : aucun client, aucune note, aucun prix.
 - Il contient l'adresse du projet Supabase et sa clé **publique** (« anon »), faite pour être publique.
